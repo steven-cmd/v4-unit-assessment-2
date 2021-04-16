@@ -19,13 +19,9 @@ the font is called 'nunito' and can be found on google fonts
   font-family: Nunito;
 }
 
-body,
-html {
+html,
+body {
   height: 100%;
-}
-
-main {
-  height: 1220px;
 }
 
 header {
@@ -53,7 +49,8 @@ article {
   margin-left: 150px;
   margin-top: 100px;
   height: 1000px;
-  width: 700px;
+  width: 60vw;
+  min-width: 900px;
 }
 
 aside {
@@ -97,7 +94,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 200px;
+  width: 250px;
   height: 200px;
   box-shadow: 1px 1px 40px 1px rgba(102, 75, 75, 0.3);
 }
@@ -140,7 +137,7 @@ h2 {
   align-items: center;
   padding-top: 20px;
   margin-top: 30px;
-  width: 200px;
+  width: 250px;
   height: 300px;
   box-shadow: 1px 1px 40px 1px rgba(102, 75, 75, 0.3);
 }
@@ -175,6 +172,7 @@ h4 {
 
 .image-container {
   width: 700px;
+  align-self: center;
 }
 
 .img {
