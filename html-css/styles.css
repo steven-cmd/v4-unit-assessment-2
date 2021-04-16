@@ -19,6 +19,15 @@ the font is called 'nunito' and can be found on google fonts
   font-family: Nunito;
 }
 
+body,
+html {
+  height: 100%;
+}
+
+main {
+  height: 1220px;
+}
+
 header {
   background-color: rgb(37, 37, 37);
   display: flex;
@@ -26,24 +35,57 @@ header {
   align-items: center;
   position: fixed;
   width: 100%;
+  height: 70px;
+  min-width: 600px;
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin-right: 20px;
   color: rgb(42, 171, 226);
+  white-space: nowrap;
+  font-weight: 900;
 }
 
+article {
+  margin-left: 150px;
+  margin-top: 100px;
+  height: 1000px;
+  width: 700px;
+}
+
+aside {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 40px;
+}
 .header-links {
+  display: flex;
+  justify-content: space-evenly;
   color: white;
+  width: 400px;
+  white-space: nowrap;
 }
 
 button {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(42, 171, 226);
+  border: 4px solid black;
+  font-size: large;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 .main-aside-container {
@@ -51,15 +93,119 @@ button {
 }
 
 .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 200px;
   height: 200px;
-  box-shadow: rgba(102, 75, 75, 0.3);
+  box-shadow: 1px 1px 40px 1px rgba(102, 75, 75, 0.3);
+}
+
+.main-circ {
+  border: 5px solid black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+
+.body {
+  position: relative;
+  left: 15px;
+  top: 10px;
+  border: 5px solid black;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(42, 171, 226);
+  z-index: -1;
+}
+
+.head {
+  position: relative;
+  left: 30px;
+  top: 15px;
+  border: 5px solid black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(42, 171, 226);
+  z-index: -1;
 }
 
 .article-card {
-  box-shadow: rgba(102, 75, 75, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 1px 1px 40px 1px rgba(102, 75, 75, 0.3);
+}
+
+ol {
+  font-size: 13px;
+}
+
+li {
+  margin-top: 7px;
+  margin-left: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+H3 {
+  font-weight: 900;
+}
+h4 {
+  margin-bottom: 10px;
+}
+
+#view-larger {
+  color: rgb(42, 171, 226);
+  font-size: small;
+  align-self: flex-end;
+}
+
+.image-container {
+  width: 700px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 130px;
+  background-color: rgb(53, 53, 53);
+}
+
+.img-row1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.img-row2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
   background-color: rgb(42, 171, 226);
+}
+
+#learn {
+  margin-left: 20px;
+  font-size: 13px;
 }
